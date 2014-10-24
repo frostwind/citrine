@@ -21,6 +21,6 @@ gulp.task 'webserver', () ->
 
 gulp.task 'watch', () ->
   gulp.watch 'demo/*.styl', ['stylesheets']
-  gulp.watch 'lib/*.styl', ['stylesheets']
+  gulp.watch 'citrine/*.styl', ['stylesheets']
 
 gulp.task 'start', ['stylesheets', 'webserver', 'watch']

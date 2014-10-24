@@ -169,6 +169,27 @@ h5,
 h6 {
   margin: 0 0 0.75rem;
 }
+ol,
+ul,
+dl {
+  margin: 0 0 0.75rem;
+}
+ul ul,
+ol ol,
+dl dt,
+dl dd {
+  margin: 0 0 0 0.75rem;
+}
+img {
+  margin: 0;
+  max-width: 100%;
+}
+strong {
+  font-weight: bold;
+}
+small {
+  font-size: 0.8rem;
+}
 html {
   font-family: 'Raleway', sans-serif;
 }

@@ -19,9 +19,9 @@ p
 
 Default modular scale
 ----
-To change the default modular scale all you have to do is change this line in `_settings.styl`.
+To change the default modular scale all you have to do is change the ratio variable in `_settings.styl`.
 
-You can find a complete list of the modular scales in `_ratios.styl`
+You can find a complete list of the ratios in `_ratios.styl`
 
 License
 ----
