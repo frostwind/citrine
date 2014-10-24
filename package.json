@@ -1,0 +1,35 @@
+{
+  "name": "citrine",
+  "version": "0.0.1",
+  "description": "A typography library for stylus to make working with vertical rhythm a little bit easier.",
+  "main": "citrine.js",
+  "scripts": {
+    "start": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frostwind/citrine"
+  },
+  "keywords": [
+    "mint",
+    "stylus",
+    "typography",
+    "vertical-rhythm",
+    "css"
+  ],
+  "author": "Frostwind",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frostwind/citrine/issues"
+  },
+  "homepage": "https://github.com/frostwind/citrine",
+  "readme": "https://github.com/frostwind/citrine/blob/master/README.md",
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "gulp": "^3.8.9",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-connect": "^2.0.6",
+    "gulp-stylus": "^1.3.3",
+    "stylus": "^0.49.2"
+  }
+}
