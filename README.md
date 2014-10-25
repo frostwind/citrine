@@ -1,7 +1,7 @@
 Citrine
 =========
 
-A typography library for stylus to make working with vertical rhythm a little bit easier.
+A typography library for stylus to make working with vertical rhythm a little bit easier (comes with a nice set of defaults too !).
 
 Installation
 ----
@@ -15,16 +15,15 @@ Usage
 citrine-base-font-size = 16
 citrine-base-line-height = 1.5
 citrine-ratio = major-third
-citrine-presets()
+citrine-presets() //add defaults presets for headings, paragraphs and lists
 
 p
   font-size remify(16) //converts pixel units to rem
   margin rhythm(1, 16) 0 //add a margin equal to 1 empty line
 ```
 
-Default modular scale
+Modular scales
 ----
-To change the default modular scale all you have to do is change the ratio variable in `_settings.styl`.
 
 You can find a complete list of the ratios in `_ratios.styl`
 
