@@ -12,6 +12,11 @@ Usage
 ```css
 @import citrine
 
+citrine-base-font-size = 16
+citrine-base-line-height = 1.5
+citrine-ratio = major-third
+citrine-presets()
+
 p
   font-size remify(16) //converts pixel units to rem
   margin rhythm(1, 16) 0 //add a margin equal to 1 empty line

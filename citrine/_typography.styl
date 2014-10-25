@@ -1,49 +1,58 @@
-html
-  font-size 100%
-  -webkit-tap-highlight-color rgba(0,0,0,0)
-  -webkit-tap-highlight-color transparent
+citrine-presets()
 
-body 
-  font-size remify(base-font-size) 
-  line-height base-line-height
-  -webkit-font-smoothing antialiased
+  citrine-h6 = citrine-base-font-size / citrine-ratio
+  citrine-h5 = citrine-h6 * citrine-ratio
+  citrine-h4 = citrine-h5 * citrine-ratio
+  citrine-h3 = citrine-h4 * citrine-ratio
+  citrine-h2 = citrine-h3 * citrine-ratio
+  citrine-h1 = citrine-h2 * citrine-ratio
 
-h1
-  font-size remify(h1)
+  html
+    font-size 100%
+    -webkit-tap-highlight-color rgba(0,0,0,0)
+    -webkit-tap-highlight-color transparent
 
-h2
-  font-size remify(h2)
+  body 
+    font-size remify(citrine-base-font-size) 
+    line-height citrine-base-line-height
+    -webkit-font-smoothing antialiased
 
-h3
-  font-size remify(h3)
+  h1
+    font-size remify(citrine-h1)
 
-h4
-  font-size remify(h4)
+  h2
+    font-size remify(citrine-h2)
 
-h5
-  font-size remify(h5)
+  h3
+    font-size remify(citrine-h3)
 
-h6
-  font-size remify(h6)
+  h4
+    font-size remify(citrine-h4)
 
-p
-  font-size remify(h5)
+  h5
+    font-size remify(citrine-h5)
 
-p, h1, h2, h3, h4, h5, h6
-  margin 0 0 rhythm(1, h5)
+  h6
+    font-size remify(citrine-h6)
 
-ol, ul, dl
-  margin 0 0 rhythm(1, h5)
+  p
+    font-size remify(citrine-h5)
 
-ul ul, ol ol, dl dt, dl dd
-  margin 0 0 0 rhythm(1, h5)
+  p, h1, h2, h3, h4, h5, h6
+    margin 0 0 rhythm(1, citrine-h5)
 
-img
-  margin 0
-  max-width 100%
+  ol, ul, dl
+    margin 0 0 rhythm(1, citrine-h5)
 
-strong
-  font-weight bold
+  ul ul, ol ol, dl dt, dl dd
+    margin 0 0 0 rhythm(1, citrine-h5)
 
-small
-  font-size remify(h6)
+  img
+    margin 0
+    max-width 100%
+
+  strong
+    font-weight bold
+
+  small
+    font-size remify(citrine-h6)

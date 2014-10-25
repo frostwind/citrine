@@ -1,5 +1,5 @@
-remify(a, b = 16)
-  return (a / b) rem
+remify(font-size, base-font-size = citrine-base-font-size)
+  return (font-size / base-font-size) rem
 
 rhythm(number, font-size, correction = 0)
-  return ((number * ((font-size/base-font-size) * base-line-height))/2) + (correction/base-font-size) rem
+  return ((number * ((font-size/citrine-base-font-size) * citrine-base-line-height))/2) + (correction/citrine-base-font-size) rem
