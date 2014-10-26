@@ -1,6 +1,6 @@
 {
   "name": "citrine",
-  "version": "0.0.41",
+  "version": "0.0.42",
   "description": "A typography library for stylus to make working with vertical rhythm a little bit easier.",
   "main": "citrine.js",
   "scripts": {
