@@ -1,9 +1,6 @@
 @import 'citrine'
 
-citrine-base-font-size = 16
-citrine-base-line-height = 1.5
-citrine-ratio = major-third
-citrine-presets()
+citrine()
 
 html
   font-family 'Raleway', sans-serif
@@ -12,6 +9,9 @@ header
   background #109933
   color white
   text-align center
+
+main
+  padding 0 rhythm(1, 16)
 
 footer
   background #109933

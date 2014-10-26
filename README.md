@@ -12,14 +12,47 @@ Usage
 ```css
 @import citrine
 
+// Optional : Define your own settings
 citrine-base-font-size = 16
 citrine-base-line-height = 1.5
 citrine-ratio = major-third
-citrine-presets() //add defaults presets for headings, paragraphs and lists
+
+// Optional : Select the packages you want to include
+citrine-box-sizing()
+citrine-reset()
+citrine-presets()
+
+// Optional : Or simply include all of them
+citrine()
 
 p
-  font-size remify(16) //converts pixel units to rem
-  margin rhythm(1, 16) 0 //add a margin equal to 1 empty line
+  font-size remify(16) // converts pixel units to rem
+  margin-bottom rhythm(1, 16) // add a margin equal to 1 empty line
+```
+
+Compilation using the command line
+----
+```sh
+stylus -u citrine -w my_file.styl
+```
+
+Compilation using gulp
+----
+```coffeescript
+gulp        = require 'gulp'
+stylus      = require 'gulp-stylus'
+citrine     = require 'citrine'
+
+gulp.task 'stylesheets', () ->
+  gulp.src './src/my_file.styl'
+  .pipe stylus
+    use: [citrine()]
+  .pipe gulp.dest('./build')
+
+gulp.task 'watch', () ->
+  gulp.watch 'src/**/*.styl', ['stylesheets']
+
+gulp.task 'start', ['stylesheets', 'watch']
 ```
 
 Modular scales

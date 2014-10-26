@@ -14,7 +14,7 @@ gulp.task 'stylesheets', () ->
 
 gulp.task 'webserver', () ->
   connect.server
-    root: 'build'
+    root: 'demo'
     port: 4444
     livereload:
       port: 4443
