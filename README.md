@@ -64,6 +64,17 @@ Modular scales
 
 You can find a complete list of the ratios in `_ratios.styl`
 
+Change log
+----
+
+0.0.3
+--
+
+**BREAKING CHANGE.**
+
+Using citrine-presets alone while keeping the old behaviour is not possible anymore (box-sizing and reset should be called explicitely now)
+Please use either citrine() to include all the packages, or refer to the Usage section to see all the available options)
+
 License
 ----
 
