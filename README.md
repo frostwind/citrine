@@ -5,11 +5,13 @@ A typography library for stylus to make working with vertical rhythm a little bi
 
 Installation
 ----
+
 `npm install 'citrine'`
 
 Usage
 ----
-```css
+
+```stylus
 @import citrine
 
 // Optional : Define your own settings
@@ -32,12 +34,14 @@ p
 
 Compilation using the command line
 ----
+
 ```sh
 stylus -u citrine -w my_file.styl
 ```
 
 Compilation using gulp
 ----
+
 ```coffeescript
 gulp        = require 'gulp'
 stylus      = require 'gulp-stylus'

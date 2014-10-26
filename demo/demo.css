@@ -171,9 +171,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0 0 0.75rem;
-}
+h6,
 ol,
 ul,
 dl {
@@ -204,7 +202,7 @@ header {
   text-align: center;
 }
 main {
-  padding: 0 0.75rem;
+  padding: 0.75rem;
 }
 footer {
   background: #109933;
