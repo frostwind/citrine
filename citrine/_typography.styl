@@ -53,7 +53,7 @@ citrine-presets()
     if citrine-definition-list-style is 'inline'
       display inline
       &:before
-        content ""
+        content ''
         display block
 
   dl dd
@@ -70,3 +70,18 @@ citrine-presets()
 
   small
     font-size remify(citrine-h6)
+
+  em
+    font-style italic
+
+  s, del
+    text-decoration line-through
+
+  blockquote
+    border-left 3px solid citrine-blockquote-border-color
+    padding-left rhythm(1, citrine-h5)
+    footer
+      font-size citrine-h6
+      font-style italic
+      &:before
+        content '\2014 \00A0'
