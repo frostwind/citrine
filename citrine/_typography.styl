@@ -41,8 +41,25 @@ citrine-presets()
   p, h1, h2, h3, h4, h5, h6, ol, ul, dl
     margin 0 0 rhythm(1, citrine-h5)
 
-  ul ul, ol ol, dl dt, dl dd
+  ul ul, ol ol, dl dl
     margin 0 0 0 rhythm(1, citrine-h5)
+
+  ol
+    list-style-type decimal
+    list-style-position inside
+
+  dl dt
+    font-weight bold
+    if citrine-definition-list-style is 'inline'
+      display inline
+      &:before
+        content ""
+        display block
+
+  dl dd
+    margin-left rhythm(1, citrine-h5)
+    if citrine-definition-list-style is 'inline'
+      display inline
 
   img
     margin 0

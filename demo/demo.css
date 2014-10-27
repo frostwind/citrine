@@ -179,9 +179,18 @@ dl {
 }
 ul ul,
 ol ol,
-dl dt,
-dl dd {
+dl dl {
   margin: 0 0 0 0.75rem;
+}
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+dl dt {
+  font-weight: bold;
+}
+dl dd {
+  margin-left: 0.75rem;
 }
 img {
   margin: 0;
@@ -197,18 +206,10 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 header {
-  background: #109933;
+  background: #22a7f0;
   color: #fff;
   text-align: center;
 }
 main {
   padding: 0.75rem;
-}
-footer {
-  background: #109933;
-  color: #fff;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }
