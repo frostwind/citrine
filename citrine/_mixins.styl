@@ -3,3 +3,19 @@ remify(font-size, base-font-size = citrine-base-font-size)
 
 rhythm(number, font-size, correction = 0)
   return ((number * ((font-size/citrine-base-font-size) * citrine-base-line-height))/2) + (correction/citrine-base-font-size) rem
+
+ms(factor)
+  result = citrine-base-font-size
+
+  if factor > 0
+    for num in (1..factor)
+      result = result * citrine-ratio
+
+    return result
+  else if factor < 0
+    for num in (factor..-1)
+      result = result / citrine-ratio
+
+    return result
+
+  return result
