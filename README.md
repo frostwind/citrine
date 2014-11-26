@@ -57,6 +57,11 @@ citrine()
 p
   font-size remify(16) // converts pixel units to rem
   margin-bottom rhythm(1, 16) // add a margin equal to 1 empty line
+
+h1
+  font-size remify(ms(4))
+  margin-bottom rhythm(1, ms(4))
+  margin-left rhythm(1, ms(4))
 ```
 
 Available options
@@ -82,6 +87,8 @@ Available mixins
 
 `citrine()` : Include all the above mixins.
 
+
+`ms(number)` : x value (up or down) the modular scale (or 0 to get the base font size).
 
 `remify(font_size)` : Convert the pixel values to rem.
 
@@ -116,6 +123,11 @@ Demo
 
 Change log
 ----
+
+**0.0.6**
+
+- Added a new function (ms) to calculate the modular scale.
+- Updated README
 
 **0.0.5**
 
