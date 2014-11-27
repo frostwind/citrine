@@ -59,9 +59,9 @@ p
   margin-bottom rhythm(1, 16) // add a margin equal to 1 empty line
 
 h1
-  font-size remify(ms(4))
-  margin-bottom rhythm(1, ms(4))
-  margin-left rhythm(1, ms(4))
+  font-size remify(ms(4, golden))
+  margin-bottom rhythm(1, ms(4, golden))
+  margin-left rhythm(1, ms(4, golden))
 ```
 
 Available options
@@ -88,7 +88,7 @@ Available mixins
 `citrine()` : Include all the above mixins.
 
 
-`ms(number)` : x value (up or down) the modular scale (or 0 to get the base font size).
+`ms(number[, ratio])` : x value (up or down) the modular scale (or 0 to get the base font size).
 
 `remify(font_size)` : Convert the pixel values to rem.
 
@@ -123,6 +123,11 @@ Demo
 
 Change log
 ----
+
+**0.0.7**
+
+- It is now possible to pass a ratio as an optional parameter to ms().
+- Updated README
 
 **0.0.6**
 
